@@ -19,11 +19,11 @@ const ProductList = ({ ProductsList }) => {
 
   if (ProductsList && Array.isArray(ProductsList)) {
     return (
-      <ul className="absolute text-black bg-white w-[15vw] z-[9] ">
+      <ul className="absolute text-black bg-white   w-[50vw] lg:w-[20vw] md:w-[30vw] sm:w-[40vw] z-[9] ">
         {" "}
         {ProductsList.map((product) => (
           <>
-            <div className="d-flex items-center justify-evenly gap-[1vw] mb-[2vw] mt-[5vw] px-[2vw] ">
+            <div className="d-flex items-center  justify-evenly gap-[1vw] mb-[2vw] mt-[5vw] px-[2vw] ">
               <img src={product.thumbnail} alt="" className="w-[5vw]" />
               <Link
                 to={`/${product.category}`}
